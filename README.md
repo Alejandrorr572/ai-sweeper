@@ -82,7 +82,7 @@ Through many episodes, the AI learns which actions lead to higher long-term rewa
 
 ## Goals
 
-Implement the full Minesweeper logic ⏳
+Implement the full Minesweeper logic ✅
 
 Design a Gym-like environment ⏳
 
