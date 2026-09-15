@@ -1,8 +1,8 @@
 # AI-Sweeper
 
-**AI-Sweeper** is a small experiment focused on teaching an artificial intelligence to play the classic Minesweeper game using reinforcement learning.
+AI-Sweeper is a small experiment done purely for fun and learning purposes focused on teaching an artificial intelligence to play the classic Minesweeper game using reinforcement learning.
 
-The goal of this project is to create a self-learning agent capable of identifying safe moves and avoiding mines through trial and error, improving its strategy over time.
+The goal of this project is to create a self learning agent capable of identifying safe moves and avoiding mines through trial and error, improving its strategy over time.
 
 ---
 
