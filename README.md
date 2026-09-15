@@ -48,7 +48,7 @@ ai-sweeper/
 
 ```bash
 # Clone the repo
-git clone https://github.com/<your-username>/ai-sweeper.git
+git clone https://github.com/Alejandrorr572/ai-sweeper.git
 cd ai-sweeper
 
 # Create a virtual environment (recommended)
