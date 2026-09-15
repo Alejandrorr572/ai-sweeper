@@ -86,9 +86,7 @@ Implement the full Minesweeper logic ✅
 
 Design a Gym-like environment ✅
 
-Train an agent using Q-Learning ⏳
-
-Train a DQN agent with PyTorch ⏳
+Train a DQN agent with PyTorch via Deep Q-Learning ⏳
 
 Visualize the learning process ⏳
 
