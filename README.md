@@ -84,7 +84,7 @@ Through many episodes, the AI learns which actions lead to higher long-term rewa
 
 Implement the full Minesweeper logic ✅
 
-Design a Gym-like environment ⏳
+Design a Gym-like environment ✅
 
 Train an agent using Q-Learning ⏳
 
