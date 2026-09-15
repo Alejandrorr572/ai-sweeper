@@ -3,7 +3,7 @@ from Board import Board
 
 
 class Game:
-    """ Game class managing the overall Minesweeper game state. """
+    """ Game class managing the overall Minesweeper game flow. """
 
     def __init__(self):
         self.board : Board = Board()

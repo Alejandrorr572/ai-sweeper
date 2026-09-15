@@ -1,6 +1,6 @@
 
 
-from Cell import Cell, EmptyCell, MineCell, NumberCell
+from src.game.Cell import Cell, EmptyCell, MineCell, NumberCell
 import random
 
 

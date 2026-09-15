@@ -4,10 +4,10 @@ from dataclasses import dataclass
 @dataclass
 class ActionResult:
     """Class representing the result of an action on a cell."""
-    exploded: bool = False
+    exploded: bool = False 
     revealed: bool = False
     flagged: bool = False
-    already_revealed: bool = False
+    already_revealed: bool = False  #Added to avoid the ai farming bia re-revealing tiles.
 
 
 class Cell(metaclass=abc.ABCMeta):
