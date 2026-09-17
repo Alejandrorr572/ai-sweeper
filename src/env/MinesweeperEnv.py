@@ -90,10 +90,10 @@ class MinesweeperEnv(gym.Env):
         terminated = self.board.is_game_over() or self.board.is_game_won()
         obs = self._get_obs()
         
-        # Step 4: Code for the reward system.
+        # Step 4: Code for the reward system. Every assignment is written += even for negative numbers, as a way of identifying faster negative and positive rewards
         reward = 0.0
         if self.board.is_game_over():
-            reward = -1.0 # Worst punishment: mine clicked
+            reward += -1.0 # Worst punishment: mine clicked
 
             # Counting of final correct flags
             correct_flags = self._count_flagged()
@@ -102,7 +102,7 @@ class MinesweeperEnv(gym.Env):
             reward += (correct_flags * 0.02) #This value is 10 times fewer than the win ones so the AI doesn't get "suicide" behaviours
 
         elif self.board.is_game_won():
-            reward = 1.0  # Won game base reward
+            reward += 1.0  # Won game base reward
             
             # Counting of final correct flags
             correct_flags = self._count_flagged()
@@ -112,17 +112,15 @@ class MinesweeperEnv(gym.Env):
 
         else:
             if is_flag_action:
-                # Opcional: Recompensa leve por poner banderas, 
-                # o simplemente 0 para que aprenda que las banderas le salvan de morir.
-                reward = -0.01 # Pequeño coste para evitar que ponga y quite banderas infinitamente
+                reward += -0.01 # This has a small punishment so it doesn't loop-flag
             else:
                 revealed_after = self._count_revealed()
                 if revealed_after > revealed_before:
                     # Variable reward depending on the number of cells revealed.
-                    reward = 0.1 * (revealed_after - revealed_before)
+                    reward += 0.1 * (revealed_after - revealed_before)
                 else:
                     # Small punishment for already revealed cells.
-                    reward = -0.1 
+                    reward += -0.1 
                 
         # Gym states that you must return: the observation matrix, rewardpoints, terminated, truncated (this will be false) and info
         return obs, reward, terminated, False, {}
