@@ -6,7 +6,7 @@ The goal of this project is to create a self learning agent capable of identifyi
 
 ---
 
-## Features (planned)
+## Features 
 
 - Basic Minesweeper game logic (custom environment)
 - Reinforcement learning agent (Q-Learning / DQN)
@@ -26,7 +26,7 @@ The goal of this project is to create a self learning agent capable of identifyi
 
 ---
 
-## Project Structure (planned)
+## Project Structure 
 
 ```
 ai-sweeper/
@@ -59,7 +59,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-## How it works (concept overview)
+## How it works 
 
 ### Game Environment
 A simplified Minesweeper game that generates a new board every episode.
@@ -97,4 +97,4 @@ It is open for anyone interested in experimenting, improving, or extending it.
 
 ### License
 
-MIT License © 2025 — Developed by Alejandro Rivada Rodríguez.
+MIT License © 2026 — Developed by Alejandro Rivada Rodríguez.
