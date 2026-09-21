@@ -71,7 +71,7 @@ The AI receives partial information (the visible board) and decides which cell t
 
 Opening a safe cell → small positive reward
 
-Flagging a mine -> small positive reward
+Flagging a mine -> small negative reward (Update, may block flag actions since the ai uses safe but unoptimal paths where it flags the whole board so it can't lose but neither win).
 
 Hitting a mine → strong negative reward
 
